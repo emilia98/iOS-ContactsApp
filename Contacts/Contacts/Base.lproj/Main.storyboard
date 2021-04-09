@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bat-tM-EMY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ContactsViewController-->
+        <scene sceneID="kFG-V6-o9Q">
+            <objects>
+                <tableViewController title="ContactsViewController" id="bat-tM-EMY" customClass="ConstactsViewController" customModule="Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5mu-Qh-Z4J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="dX7-ra-Kl9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIx-kg-FJU">
+                                    <rect key="frame" x="8" y="8" width="56" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="Groups"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brq-yS-cZ4">
+                                    <rect key="frame" x="376" y="-3.5" width="30" height="59"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                    <state key="normal" title="+"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ios-DX-uq5">
+                                    <rect key="frame" x="8" y="52" width="149.5" height="42"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <searchBar contentMode="redraw" ambiguous="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="S68-7Q-HRT">
+                                    <rect key="frame" x="8" y="110" width="398" height="56"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="cIx-kg-FJU" firstAttribute="top" secondItem="dX7-ra-Kl9" secondAttribute="top" constant="8" id="4w6-vA-BJv"/>
+                                <constraint firstAttribute="trailing" secondItem="Brq-yS-cZ4" secondAttribute="trailing" constant="8" id="53H-9o-wW3"/>
+                                <constraint firstItem="ios-DX-uq5" firstAttribute="top" secondItem="cIx-kg-FJU" secondAttribute="bottom" constant="8" id="Y0T-Kn-cvo"/>
+                                <constraint firstAttribute="trailing" secondItem="S68-7Q-HRT" secondAttribute="trailing" constant="16" id="Z7B-UT-suG"/>
+                                <constraint firstItem="cIx-kg-FJU" firstAttribute="leading" secondItem="dX7-ra-Kl9" secondAttribute="leading" constant="8" id="ZCQ-Kq-kt8"/>
+                                <constraint firstItem="Brq-yS-cZ4" firstAttribute="centerY" secondItem="cIx-kg-FJU" secondAttribute="centerY" id="bSK-7g-5Da"/>
+                                <constraint firstItem="ios-DX-uq5" firstAttribute="leading" secondItem="dX7-ra-Kl9" secondAttribute="leading" constant="8" id="cQN-F6-Bfu"/>
+                                <constraint firstItem="S68-7Q-HRT" firstAttribute="top" secondItem="ios-DX-uq5" secondAttribute="bottom" constant="16" id="dBV-iK-KlL"/>
+                                <constraint firstAttribute="bottom" secondItem="S68-7Q-HRT" secondAttribute="bottom" constant="16" id="htY-cA-tEe"/>
+                                <constraint firstAttribute="trailing" secondItem="S68-7Q-HRT" secondAttribute="trailing" constant="8" id="iIG-YC-n0V"/>
+                                <constraint firstItem="S68-7Q-HRT" firstAttribute="centerX" secondItem="dX7-ra-Kl9" secondAttribute="centerX" id="sX9-cv-cEV"/>
+                                <constraint firstItem="S68-7Q-HRT" firstAttribute="leading" secondItem="dX7-ra-Kl9" secondAttribute="leading" constant="8" id="yuk-np-ygD"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" id="yDu-FB-HLG">
+                                <rect key="frame" x="0.0" y="216" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yDu-FB-HLG" id="Drq-Jb-WZx">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bat-tM-EMY" id="gYm-EL-hzv"/>
+                            <outlet property="delegate" destination="bat-tM-EMY" id="PfZ-Wy-bDT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Dg-Sv-ciV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265.21739130434787" y="30.803571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
