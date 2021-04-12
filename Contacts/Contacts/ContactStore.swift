@@ -9,16 +9,17 @@ class ContactStore {
     private var sections = Dictionary<Character, [String]>()
     
     init() {
+        // Init of dictionary
         contacts.forEach {
             sections[$0.first!, default: [String]()].append($0)
         }
     }
     
-    var getSectionsCount: Int {
+    var sectionsCount: Int {
         return sections.keys.count
     }
     
-    var getSections: [Character] {
+    var sectionsNames: [Character] {
         return sections.keys.sorted()
     }
     
