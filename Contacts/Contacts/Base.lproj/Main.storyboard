@@ -53,25 +53,25 @@
                                     <rect key="frame" x="8" y="162" width="398" height="55"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evgeni Milev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldQ-3K-8IT">
-                                            <rect key="frame" x="73" y="8" width="99" height="21"/>
+                                            <rect key="frame" x="66" y="8" width="99" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7L-IV-BbZ">
-                                            <rect key="frame" x="73" y="33" width="48" height="15"/>
+                                            <rect key="frame" x="66" y="33" width="48" height="15"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" systemColor="secondaryLabelColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTL-au-fDN">
-                                            <rect key="frame" x="20" y="5" width="45" height="45"/>
+                                            <rect key="frame" x="8" y="2.5" width="50" height="50"/>
                                             <color key="backgroundColor" red="0.64705882349999999" green="0.64705882349999999" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="45" id="Ref-v0-pPC"/>
-                                                <constraint firstAttribute="height" constant="45" id="bXu-7b-FwU"/>
+                                                <constraint firstAttribute="width" constant="50" id="BWk-q4-UZc"/>
+                                                <constraint firstAttribute="height" constant="50" id="Zmd-Os-yX1"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <state key="normal" title="EM">
                                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
@@ -84,7 +84,6 @@
                                         <constraint firstItem="ldQ-3K-8IT" firstAttribute="top" secondItem="dHP-bj-gBj" secondAttribute="top" constant="8" id="aWS-VT-vFC"/>
                                         <constraint firstItem="H7L-IV-BbZ" firstAttribute="leading" secondItem="pTL-au-fDN" secondAttribute="trailing" constant="8" id="fwv-PF-Qn0"/>
                                         <constraint firstItem="pTL-au-fDN" firstAttribute="centerY" secondItem="dHP-bj-gBj" secondAttribute="centerY" id="hko-Qh-YF5"/>
-                                        <constraint firstItem="pTL-au-fDN" firstAttribute="leading" secondItem="dHP-bj-gBj" secondAttribute="leading" constant="20" id="jj6-GM-mc5"/>
                                         <constraint firstItem="pTL-au-fDN" firstAttribute="centerY" secondItem="dHP-bj-gBj" secondAttribute="centerY" id="vZH-xH-xjl"/>
                                     </constraints>
                                 </view>
@@ -98,6 +97,7 @@
                                 <constraint firstItem="S68-7Q-HRT" firstAttribute="top" secondItem="ios-DX-uq5" secondAttribute="bottom" constant="8" id="IPG-kS-sap"/>
                                 <constraint firstAttribute="bottom" secondItem="dHP-bj-gBj" secondAttribute="bottom" constant="8" id="Sqz-Z4-27w"/>
                                 <constraint firstItem="Brq-yS-cZ4" firstAttribute="centerY" secondItem="cIx-kg-FJU" secondAttribute="centerY" id="T0O-st-YgY"/>
+                                <constraint firstItem="pTL-au-fDN" firstAttribute="leading" secondItem="NhM-CZ-oM5" secondAttribute="leading" id="V0V-CJ-dqc"/>
                                 <constraint firstItem="ios-DX-uq5" firstAttribute="top" secondItem="cIx-kg-FJU" secondAttribute="bottom" constant="8" id="Y0T-Kn-cvo"/>
                                 <constraint firstItem="cIx-kg-FJU" firstAttribute="leading" secondItem="dX7-ra-Kl9" secondAttribute="leading" constant="8" id="ZCQ-Kq-kt8"/>
                                 <constraint firstItem="ios-DX-uq5" firstAttribute="leading" secondItem="dX7-ra-Kl9" secondAttribute="leading" constant="8" id="cQN-F6-Bfu"/>
